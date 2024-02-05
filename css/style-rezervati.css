@@ -1,0 +1,54 @@
+
+
+.cta{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 30rem;
+}
+
+input{
+    outline: none;
+    background: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    padding: 0 5px;
+    
+}
+
+
+.cta-group{
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: 0.4rem;
+margin-bottom: 0.8rem;
+}
+
+.cta-group label{
+    font-size: 1.4rem;
+}
+
+.cta-group input{
+width: 30rem;
+height: 3rem;
+}
+
+
+.cta-group-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.cta-group-2 input{
+    width: 14rem;
+    
+}
+
+.btn-slide{
+    outline: none;
+    border: none;
+    width: 18rem;
+    height: 4.5rem;
+    margin-top: 1.5rem;
+}

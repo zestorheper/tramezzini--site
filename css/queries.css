@@ -1,0 +1,479 @@
+/* 
+look at the most used width and we pick the breakpoints between similar device widths
+300-600
+600-900
+900-1200
+>1200
+*/
+
+/* when the design breaks we remodify it and make it look good */
+
+/* we use rem because the text will adjust to the users screen  */
+/* rem and em do not depend on html font size in media queries
+1rem=1em=16px
+*/
+
+/* ****************************** */
+/*Bellow 1334 px (for smaller desktops */
+/* ****************************** */
+@media screen and (max-width: 84rem) {
+}
+
+
+
+
+/* ****************************** */
+/* bellow 1200px (Landscape Tablets) */
+/* ****************************** */
+
+@media screen and (max-width: 75rem) {
+
+    .dissapear{
+        display: none;
+    }
+
+    .gone{
+        display: flex;
+    }
+
+    .food{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .drinks-food-container{
+        grid-template-columns: 1fr ;
+        row-gap: 6.4rem;
+    }
+
+    .food-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .gone-75{
+        display: none;
+    }
+
+    @keyframes line-appear-1{
+        0%{  width: 0;} 100%{ width: 28%;}
+      }
+      
+      @keyframes line-appear-2{
+        0%{  height: 0;} 100%{ height: 78.6%;}
+      }
+      
+}
+
+
+@media screen and (max-width: 1050px) {
+    .food-container .food-list{
+        grid-template-columns: 1fr ; 
+    }
+
+    .gone-1050{
+        display: none;
+    }
+}
+/* ****************************** */
+/* Below 944px (Tablets) */
+/* ****************************** */
+@media screen and (max-width: 59rem) {
+    #about-us-secondary{
+    font-size: 3.6rem;
+    }
+
+    .gone-55{
+        display: inline-block;
+    }
+
+    .about-us-section{
+        position: relative;
+    }
+
+    .knife-small-about-us{
+        position: absolute;
+        height: 100%;
+
+    }
+
+    .knife-small-left{
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg) scaleX(-1);
+       
+    }
+
+    .knife-small-right{
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) scaleX(-1);
+
+    }
+
+
+
+    .about-us{
+        grid-template-columns: auto;
+       position: relative;
+       row-gap: 2.4rem;
+    }
+
+    .left-section{
+        align-items: start;
+        text-align: left;
+    }
+
+
+    .right-section{
+        align-items: end;
+        text-align: right;
+    }
+    /* .about-us-img-container{
+        width: auto;
+        height: 6.5rem;
+        position: relative;
+    } */
+
+    .about-us-img{  
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%) rotate(-90deg);
+       display: none;
+    }
+
+    .about-us-text{
+        width: 70%;
+    }
+
+   
+
+    .food{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .footer{
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+    }
+    
+    .container-social{
+        text-align: center;
+    }
+    .footer-logo-container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo-container p{
+
+        width: 70%;
+    }
+
+    .arr-btn{
+        display: none;
+    }
+
+    .cuvantul-bucatarului{
+        grid-template-columns: 1fr;
+    }
+
+    .cuvantul-bucatarului-img-container img {
+        width: 80%;
+      }
+      .cuvantul-bucatarului-text-container .heading-primary{
+        margin-bottom: 0;
+      }
+
+      .cuvantul-bucatarului-text{
+        width: 100%;
+      }
+      .cuvantul-bucatarului-text p{
+        font-size: 2.4rem;
+       
+      }
+    .contact-section{
+    grid-template-columns: 60% 40%;
+    }
+
+    @keyframes line-appear-1{
+        0%{  width: 0;} 100%{ width: 24%;}
+      }
+
+     @keyframes line-appear-2{
+         0%{  height: 0;} 100%{ height: 79.4%;}
+      }
+
+      .active.right-section{
+        animation: app-left 1s ease-in forwards
+        }
+        
+        .active.left-section{
+          animation: app-right 1s ease-in forwards;
+        }
+
+}
+
+@media screen and (max-width: 865px) {
+    .drinks-container .food-list{
+        grid-template-columns: 1fr ; 
+    }
+
+
+
+    .gone-865{
+        display: none;
+    }
+
+    @keyframes line-appear-1{
+        0%{  width: 0;} 100%{ width: 20%;}
+      }
+
+      .swiper-slide {
+        width: 500px;
+        height: 400px;
+      }
+}
+
+/* ****************************** */
+/* bellow 700px for smaller tablets */
+/* ****************************** */
+
+@media screen and (max-width: 44rem) {
+
+    .food-list{
+        display: grid;
+        grid-template-columns:  1fr ;
+    }
+    .gone{
+        display: none;
+    }
+
+    .gone-44{
+        display: none;
+    }
+
+    .gone-btn{
+        display: flex;
+    }
+
+    .about-us-img{
+        height: 100vw;
+    }
+
+    .about-us-text{
+        width: 80%;
+        font-weight: 600;
+    }
+
+    .galerie{
+        grid-template-columns: 1fr;
+    }
+
+   .galerie-container .grid{
+    row-gap: 3.2rem;
+    }
+
+    .galerie-text{
+        width: 90%;
+        margin-bottom: 2.4rem;
+    }
+
+    .hero-title{
+        width: 50rem;
+        font-size: 5.2rem;
+    }
+
+    .hero-text{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .header-container{
+        width: 30rem;
+    }
+
+    @keyframes line-appear-1{
+        0%{  width: 0;} 100%{ width: 15%;}
+      }
+
+      @keyframes line-appear-2{
+        0%{  height: 0;} 100%{ height: 79%;}
+      }
+}
+
+
+@media screen and (max-width: 570px) {
+    @keyframes line-appear-2{
+        0%{  height: 0;} 100%{ height: 79.8%;}
+      }
+
+      .swiper-slide {
+        width: 400px;
+        height: 400px;
+      }
+}
+
+/* ****************************** */
+/* below 544px for phones */
+/* ****************************** */
+@media screen and (max-width: 34rem) {
+
+
+    .hero-text{
+        font-size: 2rem;
+        padding: 0 6.4rem;
+    }
+
+    .food{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    html{
+        font-size: 50%;
+    }
+
+    .header-container{
+        width: 25rem;
+    }
+
+    .about-us-text{
+        font-size: 2rem;
+        font-weight: 800;
+        width: 90%;
+    }
+
+    .about-us-img{
+        height: 80vw;
+    }
+
+    .food-list{
+        grid-template-columns: 1fr;
+    }
+
+   
+    .contact-section{
+        grid-template-columns: 100% 0%;
+    }
+
+    .footer-logo-container .heading-secondary{
+        font-size: 3.6rem;
+    }
+
+    .menu-svg-1{
+        transform: scale(0.6);
+        top: 65px;
+        left: 0px;
+    }
+
+    .menu-svg-2{
+    transform: scaleX(-1) scale(0.6);
+    top: 65px;
+    right: 0px;
+    }
+
+    .menu-svg-3{
+        left: 0px;
+        bottom: -46px;
+        transform: scaleY(-1) scale(0.6);
+      }
+      
+      .menu-svg-4{
+        right: 0px;
+        bottom: -46px;
+        transform: scaleY(-1) scaleX(-1) scale(0.6);
+      }
+
+    .lu-left{
+        left:78px;
+        top: 95px ;
+    }
+
+    .lu-right{
+        right:78px;
+        top: 95px ;
+        transform: scaleX(-1);
+
+    }
+
+
+    .lm-left{
+        left: 27px;
+        top: 144px;
+    }
+
+    .lm-right{
+        right: 27px;
+        top: 144px;
+    }
+
+    .line-lower{
+        bottom: -15px;
+    }
+
+    .ll-left{
+        left: 77px;
+    }
+
+    .ll-right{
+        right: 77px;
+        transform: scaleX(-1);
+    }
+
+
+     @keyframes line-appear-1{
+        0%{  width: 0;} 100%{ width: 12%;}
+      }
+
+      .menu-section .heading-primary{
+        font-size: 4.2rem;
+        margin-bottom: 3rem;
+      }
+
+      @keyframes line-appear-2{
+        0%{  height: 0;} 100%{ height: 78%;}
+      }
+
+      .swiper-slide {
+        width: 300px;
+        height: 400px;
+      }
+
+      .swiper-slide:after{
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      .cuvantul-bucatarului-img-container img {
+        width: 90%;
+      }
+}
+
+
+@media screen and (max-width: 440px) {
+    @keyframes line-appear-2{
+        0%{  height: 0;} 100%{ height: 79%;}
+      }
+}
+
+@media screen and (max-width: 400px) {
+    @keyframes line-appear-2{
+        0%{  height: 0;} 100%{ height: 80%;}
+      }
+}
+
+
+/*
+ SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

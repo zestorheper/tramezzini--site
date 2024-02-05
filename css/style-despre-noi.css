@@ -1,0 +1,83 @@
+
+
+/* .contact-section-img{
+    height: 100%;
+} */
+
+
+ 
+.despre-noi-container{
+    font-family: "Cormorant Garamond", serif;
+    color: #333;
+  margin-top: 3.2rem;
+  }
+  
+  .contact-section-2{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+      height: auto
+      
+  }
+
+
+  .contact-section-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacte-container-text p{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+
+
+
+.contact-section-img img{
+
+   height: 34.5rem;
+}
+
+
+@media  screen and (max-width:59rem) {
+
+    .contacte-container-text{
+
+        margin-bottom: 3.4rem;}
+
+    .contacte-container-text p{
+        width: 90%;
+    }
+
+    .contact-section-img img{
+        height: auto;
+        width: 100%;
+     }
+}
+
+@media  screen and (max-width:44rem) {
+
+    .despre-noi-img-2{
+        grid-row: 2/3;
+    }
+
+
+    .contacte-container-text p{
+        width: 90%;
+        font-weight: 500;
+    }
+
+
+     .contact-section-2{
+       grid-template-columns: 1fr;
+       text-align: center;
+       margin-bottom: 6.4rem;
+    }
+
+    .contact-section-img img{
+        height: auto;
+        width: 80%;
+     }
+
+}
