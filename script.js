@@ -1,7 +1,21 @@
 
-
-
-
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzKLCiGCnSpxOOZERVEE0c6yxWSPKVPzKSazxwZnT6I2RbzCC-PFmpJuvbPTypMyepJdg/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.querySelector('.good')
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = 'Multumim! Un mesaj a fost trimis'
+      setTimeout(function(){
+        msg.innerHTML = ''
+      },5000)
+      form.reset()
+    })
+    .catch(error => {
+      msg.innerHTML = 'Va rugam introduceti datele si incercati inca odata'
+    })
+})
 
 
 const addEventOnElements = function (elements, eventType, callback) {
@@ -60,43 +74,12 @@ overlay.addEventListener("click", function () {
 });
 
 document.addEventListener('keydown', function (e) {
-  console.log(e.key);
-
   if (e.key === 'Escape' && body.classList.contains('nav-open')) {
     navOC();
   }
 });
 
-const inpt = document.querySelector(".inpt");
-const inptBtn = document.querySelector(".btn-inpt");
-const good = document.querySelector(".good");
-const bad = document.querySelector(".bad");
 
-inptBtn.addEventListener("click", function () {
-  // if (inpt.value.lenght >= 1) {
-  //   good.classList.remove("hidden");
-  // }
-
-  if (inpt.value.length >= 1) {
-    good.classList.remove("hidden");
-  }
-
-  if (inpt.value === "") {
-    bad.classList.remove("hidden");
-  }
-
-  if (!inpt.classList.contains("hidden") & (inpt.value === "")) {
-    good.classList.add("hidden");
-    bad.classList.remove("hidden");
-  }
-
-  if (!bad.classList.contains("hidden") & (inpt.value.length >= 1)) {
-    good.classList.remove("hidden");
-    bad.classList.add("hidden");
-  }
-
-  inpt.value = "";
-});
 
 
 
