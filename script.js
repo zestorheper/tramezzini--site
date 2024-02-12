@@ -1,23 +1,4 @@
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzKLCiGCnSpxOOZERVEE0c6yxWSPKVPzKSazxwZnT6I2RbzCC-PFmpJuvbPTypMyepJdg/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.querySelector('.good')
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-      msg.innerHTML = 'Multumim! Un mesaj a fost trimis'
-      setTimeout(function(){
-        msg.innerHTML = ''
-      },5000)
-      form.reset()
-    })
-    .catch(error => {
-      msg.innerHTML = 'Va rugam introduceti datele si incercati inca odata'
-    })
-})
-
-
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
@@ -28,7 +9,52 @@ const addEventOnElements = function (elements, eventType, callback) {
 const menu = document.querySelector("#menu");
 const body = document.querySelector('body');
 const overlay = document.querySelector('.overlay')
+const overlay2 = document.querySelector('.overlay-2')
+const newsletter = document.querySelector('.newsletter')
+const btnNewsletter = document.querySelector('.newsletter-btn-close')
 
+
+function postToGoogle() {
+  var field1 = $("#Email").val();
+
+  $.ajax({
+url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0Wzgb0-vZbN7G7F5I8jagt6xXmoTGgIaTY30xw3ax228fNg/formResponse",
+data: {
+"entry.1358555970": field1,
+},
+type: "POST",
+dataType: "xml",
+success: function (d) {
+$('#contact').trigger('reset');
+},
+error: function (x, y, z) {
+$('#contact').trigger('reset');
+}
+});
+return false;
+
+}
+
+function postToGoogle1() {
+  var field1 = $("#Email1").val();
+
+  $.ajax({
+url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0Wzgb0-vZbN7G7F5I8jagt6xXmoTGgIaTY30xw3ax228fNg/formResponse",
+data: {
+"entry.1358555970": field1,
+},
+type: "POST",
+dataType: "xml",
+success: function (d) {
+$('#contact1').trigger('reset');
+},
+error: function (x, y, z) {
+$('#contact1').trigger('reset');
+}
+});
+return false;
+
+}
 
 
 
@@ -46,6 +72,9 @@ const navOC= function () {
 // });
 
 // header-follow
+
+
+
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -194,3 +223,14 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+setTimeout(function(){
+  overlay2.classList.toggle('show-overlay');
+  newsletter.classList.toggle('newsletter-appear')
+},5000)
+
+btnNewsletter.addEventListener('click',function(){
+overlay2.classList.toggle('show-overlay');
+newsletter.classList.toggle('newsletter-appear')
+})

@@ -302,6 +302,18 @@ look at the most used width and we pick the breakpoints between similar device w
       @keyframes line-appear-2{
         0%{  height: 0;} 100%{ height: 79%;}
       }
+
+      .newsletter-text-container .heading-secondary{
+        font-size: 3.2rem;
+      }
+
+      .newsletter-text{
+        font-size: 1.4rem;
+      }
+
+      .newsletter-text-container .inpt{
+        width: 20rem;
+      }
 }
 
 
@@ -454,6 +466,26 @@ look at the most used width and we pick the breakpoints between similar device w
       .cuvantul-bucatarului-img-container img {
         width: 90%;
       }
+
+      .newsletter{
+        grid-template-columns: 1fr;
+        height: 70rem;
+      }
+      .newsletter-img-container{
+        grid-row: 1/2;
+      }
+
+      .newsletter-img{
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 0;
+      }
+
+      .newsletter-text-container .heading-secondary{
+        font-size: 2.8rem;
+      }
+
+
 }
 
 

@@ -1265,15 +1265,16 @@
             <div class="news-cell">
               <div class="container-social">
                 <h2 class="heading-tertiary" id="margin-btm-small">NOUTATI</h2>
-                <form name="submit-to-google-sheet" class="input-container">
+                <form  id="contact" onsubmit="return postToGoogle();" class="input-container">
                   <input
                     class="inpt"
                     type="email"
-                    name="Email"
-                    required="required"
+                    name="entry.1358555970"
+                    data-name="Email" 
+                    id="Email" 
                     placeholder="Introduceti Email"
                   />
-                  <button type="submit" class="btn-inpt">&rarr;</button>
+                  <button type="submit" id="contact-submit" class="btn-inpt">&rarr;</button>
                   <p class="good"></p>
                 </form>
               </div>
@@ -1312,6 +1313,9 @@
         nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
       ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
       <script src="/script.js"></script>
         </body>
