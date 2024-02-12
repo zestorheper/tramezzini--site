@@ -228,7 +228,7 @@ window.addEventListener("scroll", reveal);
 setTimeout(function(){
   overlay2.classList.toggle('show-overlay');
   newsletter.classList.toggle('newsletter-appear')
-},5000)
+},10000)
 
 btnNewsletter.addEventListener('click',function(){
 overlay2.classList.toggle('show-overlay');
