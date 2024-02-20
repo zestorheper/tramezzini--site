@@ -18,9 +18,9 @@ function postToGoogle() {
   var field1 = $("#Email").val();
 
   $.ajax({
-url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0Wzgb0-vZbN7G7F5I8jagt6xXmoTGgIaTY30xw3ax228fNg/formResponse",
+url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScBON7BxEFhJ1GJ4jk2aSLSGO1O9qDnQr50j7UPuanYjUCFYg/formResponse",
 data: {
-"entry.1358555970": field1,
+"entry.215857491": field1,
 },
 type: "POST",
 dataType: "xml",
@@ -39,9 +39,9 @@ function postToGoogle1() {
   var field1 = $("#Email1").val();
 
   $.ajax({
-url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0Wzgb0-vZbN7G7F5I8jagt6xXmoTGgIaTY30xw3ax228fNg/formResponse",
+url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScBON7BxEFhJ1GJ4jk2aSLSGO1O9qDnQr50j7UPuanYjUCFYg/formResponse",
 data: {
-"entry.1358555970": field1,
+"entry.215857491": field1,
 },
 type: "POST",
 dataType: "xml",

@@ -28,6 +28,10 @@
     <link rel="shortcut icon" href="img/web-logo.png" type="x-icon">
     <link rel="apple-touch-icon" href="img/web-logo.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preload" as="image" href="/img/newsteller-img.webp">
+    <link rel="preload" as="image" href="/hero-bg/bg-1.webp">
+    <link rel="preload" as="image" href="/hero-bg/bg-2.webp">
+    <link rel="preload" as="image" href="/hero-bg/bg-3.webp">
   </head>
   <body id="home">
     <header class="header-container ">
@@ -100,8 +104,8 @@
                   name="mail-outline"
                   class="pre-header-icon"
                 ></ion-icon>
-                <a href="mailto:enogastronomia-tramezzini@gmail.com"
-                  >enogastronomia-tramezzini@gmail.com</a
+                <a href="mailto:enogastronomia.tramezzini@gmail.com"
+                  >enogastronomia.tramezzini@gmail.com</a
                 >
               </div>
           </li>
@@ -154,8 +158,8 @@
                   name="mail-outline"
                   class="pre-header-icon"
                 ></ion-icon>
-                <a href="mailto:enogastronomia-tramezzini@gmail.com"
-                  >enogastronomia-tramezzini@gmail.com</a
+                <a href="mailto:enogastronomia.tramezzini@gmail.com"
+                  >enogastronomia.tramezzini@gmail.com</a
                 >
               </div>
             </div>
@@ -217,7 +221,7 @@
             <p class="hero-text slider-reveal">
               Veniti cu familia sa savurati mancarea italiana facuta cu dragoste
             </p>
-            <a href="#about-us" class="hero-follow-up slider-reveal"
+            <a href="#noutati" class="hero-follow-up slider-reveal"
               >Aflati mai multe &darr;</a
             >
           </div>
@@ -242,14 +246,25 @@
               </div>
             </div>
             <h1 class="hero-title slider-reveal">
-              Pentru Iubitorii de mancare Italiana
+              O Călătorie culinară prin deliciile Italiene autentice
             </h1>
             <p class="hero-text slider-reveal">
-              Veniti cu familia sa savurati mancarea italiana facuta cu dragoste
+              La Enogastronomia Tramezzini mereu gasesti produse noi si unice care va satisfac orice capriciu
             </p>
-            <a href="#about-us" class="hero-follow-up slider-reveal"
-              >Aflati mai multe &darr;</a
-            >
+            <div class="btn-slide hero-follow-up slider-reveal" id="contact-slide">
+              <a
+                href="/page/meniu.html"
+                class="slide-text" id="contact-text"
+                >Meniul Nostru</a
+              >
+              <a
+                href="/page/meniu.html"
+                class="slide-logo"
+              >
+                <ion-icon name="restaurant-outline" class="social-logo"></ion-icon>
+              </a>
+
+            </div>
           </div>
         </li>
         <li class="slider-item" data-hero-slider-item>
@@ -272,14 +287,26 @@
             </div>
           </div>
             <h1 class="hero-title slider-reveal">
-              Pentru Iubitorii de mancare Italiana
+              Rezervați-vă Locul: Experiența Culinară Începe Aici!
             </h1>
             <p class="hero-text slider-reveal">
               Veniti cu familia sa savurati mancarea italiana facuta cu dragoste
             </p>
-            <a href="#about-us" class="hero-follow-up slider-reveal"
-              >Aflati mai multe &darr;</a
-            >
+
+            <div class="btn-slide hero-follow-up slider-reveal" id="contact-slide">
+              <a
+                href="https://ig.me/m/enogastronomia_tramezzini_"
+                class="slide-text" id="contact-text"
+                >Rezervati o masa</a
+              >
+              <a
+                href="https://ig.me/m/enogastronomia_tramezzini_"
+                class="slide-logo"
+              >
+                <ion-icon name="calendar-outline" class="social-logo"></ion-icon>
+              </a>
+
+            </div>
           </div>
         </li>  
       </ul>
@@ -290,15 +317,15 @@
           <div class="newsletter-text-container">
             <h2 class="heading-secondary">10% reducere la urmatoarea comanda</h2>
             <p class="newsletter-text">La fel ve-ti primi noutati despre noile noastre bunataturi
-              si ve-ti fi primul care va stii despre evenimentele de la noi din restaurant. Iti valoram timpul 
-              si nu te vom inunda informatii inutile.
+              si ve-ti fi primul care va stii despre evenimentele noi de la noi din restaurant. Iti valoram timpul 
+              si nu te vom inunda cu informatii inutile.
             </p>
             <form  id="contact1" onsubmit="return postToGoogle1();" class="input-container">
               <label for="Email1">Adresa de email</label>
               <input
                 class="inpt"
                 type="email"
-                name="entry.1358555970"
+                name="entry.215857491"
                 data-name="Email" 
                 id="Email1" 
                 placeholder="Introduceti Email"
@@ -317,7 +344,7 @@
 
 
 <!-- swiper container -->
-<section class="swiper-section">
+<section id="noutati" class="swiper-section">
   <div class="swiper-text-container">
   <h4 class="subheading">NOUTATILE ZILEI</h4>
   <div class="form">
@@ -370,8 +397,8 @@
                   <div class="oval-basic"></div>
                 </div>
                 <p class="about-us-text">
-                  Un mic restaurant inceput din dragostea pentru mancarea
-                  italiana superba si pentru a impartasi o poveste plina de
+                  Un mica enogastronomie realizata din dragostea pentru mancarea
+                  italiana si pentru a impartasi o poveste plina de
                   gusturi explosive.
                 </p>
                 <a href="page/despre-noi.html" class="btn">Mai mult</a>
@@ -390,8 +417,8 @@
                 </div>
                 <p class="about-us-text">
                   Dupa 21 de ani petrecuti in italia, tara gastronomiei am decis
-                  sa ma reintorc in tara mea pentru a impartasi si cu voi
-                  bucataria italiana.
+                  sa ma reintorc in tara mea pentru a impartasi cu voi
+                  experietele mele.
                 </p>
                 <a href="page/povestea-noastra.html" class="btn">Mai mult</a>
                 <img src="img/knife.png" alt="" class="gone-55 knife-small-about-us knife-small-right" >
@@ -660,10 +687,9 @@
                 <div class="cuvantul-bucatarului-text">
                   <img src="img/quotes.png" alt="" />
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint, voluptate laborum omnis totam, deserunt fugiat velit
-                    accusantium voluptatem dolore cum cupiditate pariatur, esse
-                    vero sapiente est natus numquam fugit consequuntur.
+                    Mâncarea reprezintă o modalitate de a spune povești fără a folosi cuvinte.
+                    Enogastronomia Tramezzini va va trasporta intr-o instorie plina de arome
+                    si gust, unde actorii principali sunt salamul, cascavalul si alte bunataturi.
                   </p>
                 </div>
                 <p class="name-chef">Sergiu Mândru</p>
@@ -836,7 +862,7 @@
               <input
                 class="inpt"
                 type="email"
-                name="entry.1358555970"
+                name="entry.215857491"
                 data-name="Email" 
                 id="Email" 
                 placeholder="Introduceti Email"

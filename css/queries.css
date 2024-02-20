@@ -493,6 +493,11 @@ look at the most used width and we pick the breakpoints between similar device w
     @keyframes line-appear-2{
         0%{  height: 0;} 100%{ height: 79%;}
       }
+
+      .newsletter{
+        grid-template-columns: 1fr;
+        height: 65rem;
+      }
 }
 
 @media screen and (max-width: 400px) {
