@@ -469,7 +469,7 @@ look at the most used width and we pick the breakpoints between similar device w
 
       .newsletter{
         grid-template-columns: 1fr;
-        height: 65rem;
+        height: 69rem;
       }
       .newsletter-img-container{
         grid-row: 1/2;
