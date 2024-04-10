@@ -68,6 +68,18 @@
 }
 
 
+.flag-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.gtranslate_wrapper{
+    display: flex;
+    gap: 0.5rem;
+}
 
 
 
