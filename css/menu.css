@@ -80,8 +80,16 @@
     display: flex;
     gap: 0.5rem;
 }
+.invs{
+    position: relative;
 
+}
 
+.text-invisible{
+    color: #fff;
+   font-size: 1px;
+    pointer-events: none;
+} 
 
 @media screen and (max-width:75rem){
     
