@@ -549,6 +549,10 @@ transform: translateY(0.5rem);
   font-weight: 700
 }
 
+#hero-title-3{
+  font-size: 5.4rem;
+}
+
 .hero-small-title {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -759,7 +763,7 @@ z-index: 2;
   left: 30px;
   font-size: 2.8rem;
   z-index: 3;
-  text-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 1);
+  text-shadow: #000 1px 0 10px;
 }
 
 .swp-1::after{
@@ -1674,7 +1678,7 @@ position: relative;
 }
 
 .newsletter-text-container .heading-secondary{
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 
