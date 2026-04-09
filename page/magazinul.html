@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazin Online În Curând | Tramezzini</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #faf9f6; /* O nuanță foarte fină de crem/alb-murdar */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .coming-soon-container {
+        max-width: 650px;
+        padding: 40px 20px;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      .pre-title {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #777;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      /* Creates the elegant lines on the sides of the pre-title */
+      .pre-title::before, .pre-title::after {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #ccc;
+      }
+
+      .title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 5.4rem;
+        font-weight: 600;
+        color: #222;
+        margin: 0 0 24px 0;
+        line-height: 1.1;
+      }
+
+      .description {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 48px;
+        padding: 0 20px;
+      }
+
+      .back-button {
+        display: inline-block;
+        padding: 16px 32px;
+        background-color: #4a4f54; /* Matches the dark gray from your screenshot */
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .back-button:hover {
+        background-color: #2a2d30;
+        transform: translateY(-3px);
+      }
+
+      /* Subtle entry animation */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 600px) {
+        .title { font-size: 3.8rem; }
+        .description { font-size: 15px; padding: 0; }
+        .pre-title::before, .pre-title::after { width: 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="coming-soon-container">
+      <div class="pre-title">Enogastronomia Tramezzini</div>
+      <h1 class="title">În Curând</h1>
+      <p class="description">
+        Lucrăm cu pasiune pentru a aduce magazinul nostru online la viață. Foarte curând vei putea comanda selecția noastră de vinuri fine, brânzeturi maturate și mezeluri tradiționale italienești direct la tine acasă. Rămâi aproape!
+      </p>
+      <a href="../index.html" class="back-button">Înapoi la Meniu</a>
+    </div>
+
+  </body>
+</html>
